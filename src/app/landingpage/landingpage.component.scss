@@ -1,0 +1,196 @@
+/// RAINBOW ///
+
+.half-circle {
+  width: 330px;
+  height: 160px;
+  background-color: transparent;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  border: 15px solid #d70000;
+  border-bottom: 0;
+  position: relative;
+}
+
+.half-circle::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 145px;
+  background-color: transparent;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  border: 15px solid #d78c00;
+  border-bottom: 0;
+  //top: 10px;
+}
+
+.half-circle::after {
+  content: "";
+  position: absolute;
+  width: 270px;
+  height: 130px;
+  background-color: transparent;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  border: 15px solid #d7d300;
+  border-bottom: 0;
+  top: 15px;
+  left: 15px;
+}
+
+.half-circleInner {
+  width: 240px;
+  height: 115px;
+  background-color: transparent;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  border: 15px solid #00791a;
+  border-bottom: 0;
+  position: relative;
+  top: -115px;
+  left: 45px;
+}
+
+.half-circleInner::before {
+  content: "";
+  position: absolute;
+  width: 210px;
+  height: 100px;
+  background-color: transparent;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  border: 15px solid #000e88;
+  border-bottom: 0;
+  //top: 10px;
+}
+
+.half-circleInner::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 85px;
+  background-color: transparent;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  border: 15px solid #8100d7;
+  border-bottom: 0;
+  top: 15px;
+  left: 15px;
+}
+
+@keyframes rainbowmagic {
+  100% {
+    border-color: transparent;
+  }
+}
+
+// cloud 1 for the rainbow
+.rainbowcloud1 {
+  border: 35px solid white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  position: relative;
+  animation: puff 2s, floating 4s infinite;
+  top: -140px;
+  left: 10px;
+}
+
+.rainbowcloud1::before {
+  content: "";
+  position: absolute;
+  border: 25px solid white;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  top: -25px;
+  left: 7px;
+}
+
+.rainbowcloud1::after {
+  content: "";
+  position: absolute;
+  border: 25px solid white;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  left: -57px;
+  top: -25px;
+}
+
+// cloud 2 for the rainbow
+.rainbowcloud2 {
+  border: 35px solid white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  position: relative;
+  animation: puff 5s, floating 5s infinite;
+  top: -215px;
+  left: 250px;
+}
+
+.rainbowcloud2::before {
+  content: "";
+  position: absolute;
+  border: 25px solid white;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  top: -25px;
+  left: 7px;
+}
+
+.rainbowcloud2::after {
+  content: "";
+  position: absolute;
+  border: 25px solid white;
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  left: -57px;
+  top: -25px;
+}
+
+@keyframes puff {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(4);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes floating {
+  20% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#rainbow {
+  height: 300px;
+}
+
+//// NAME AND TITLE ////
+h1 {
+  font-family: "Fredericka the Great", cursive;
+  animation: nameFadeIn 3s;
+  animation-fill-mode: forwards;
+  color: transparent;
+  font-size: 55px;
+}
+
+#title {
+  animation: nameFadeIn 3s;
+  animation-fill-mode: forwards;
+  color: transparent;
+}
+
+@keyframes nameFadeIn {
+  100% {
+    color: #111344;
+  }
+}

@@ -1,0 +1,45 @@
+#photo {
+  border-radius: 50px;
+  width: 100%;
+  height: auto;
+  animation: fadeIn 3s;
+  animation-fill-mode: forwards;
+}
+
+.text {
+  line-height: 200%;
+  //font-size: 1vw;
+}
+
+.smallerHeadline {
+  font-style: italic;
+}
+
+#csharp {
+  width: 65px;
+}
+
+#ang {
+  width: 70px;
+}
+
+#ts {
+  width: 72px;
+  //margin-left: 8px;
+}
+
+#mssql {
+  width: 90px;
+}
+
+#angjs {
+  width: 140px;
+}
+
+#sn {
+  width: 140px;
+}
+
+#logos {
+  margin-top: 17px;
+}

@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+  font-size: 100%; // usually 16px by default
+}
+
+body {
+  //height: 100%;
+  background-attachment: fixed;
+  background-color: #a3d1f5;
+  background-image: -webkit-linear-gradient(#a3d1f5, #fff);
+  background-image: linear-gradient(#a3d1f5 60%, #fff);
+  background-image: -moz-linear-gradient(top, #a3d1f5 0%, #fff 100%);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2em;
+  color: #111344;
+  overflow-x: hidden;
+  //position: fixed;
+}
+
+h1 {
+  font-family: "Fredericka the Great", cursive;
+}
+
+#back {
+  background-color: #e6f3fc;
+  border-radius: 50px;
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 16px 8px rgba(116, 151, 189, 1);
+  -moz-box-shadow: 5px 5px 16px 8px rgba(116, 151, 189, 1);
+  box-shadow: 5px 5px 16px 8px rgba(116, 151, 189, 1);
+  padding: 50px;
+  animation: fadeIn 1s;
+  animation-fill-mode: forwards;
+  margin-bottom: 40px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
